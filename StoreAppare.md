@@ -1,3 +1,17 @@
-# Store Apparel - Victoria Celina S. Azarcon - 35811943
-ICT 171 Assignment 3
-This project, called Store Apparel, aims to create a secure and easy-to-use online shopping website for clothing and fashion accessories. It will be hosted on Amazon EC2 using the Infrastructure as a Service (IaaS) model to ensure flexibility, scalability, and strong performance. The goal is to build a dependable e-commerce platform where customers can comfortably browse products, add items to their cart, and complete purchases with confidence that their data is safe. The website will run on Ubuntu Server 22.04 LTS, using Apache as the web server and PostgreSQL or MySQL to manage important data such as user accounts, product details, and transactions. To keep everything secure, the project will use TLS/SSL encryption, AWS security groups, and DNS configuration for stable and protected access. In the end, Store Apparel aims to offer a practical, secure, and customizable online shopping experience built on a reliable cloud foundation.
+# Store Apparel  
+**Author:** Victoria Celina S. Azarcon  
+**Student ID:** 35811943  
+**Course:** ICT 171 — Assignment 3  
+
+---
+
+## Project Overview  
+This project, called **Store Apparel**, aims to create a secure and easy-to-use online shopping website for clothing and fashion accessories.  
+It will be hosted on **Amazon EC2** using the **Infrastructure as a Service (IaaS)** model to ensure flexibility, scalability, and strong performance.
+
+The goal is to build a dependable e-commerce platform where customers can comfortably browse products, add items to their cart, and complete purchases with confidence that their data is safe.  
+The website will run on **Ubuntu Server 22.04 LTS**, using **Apache** as the web server and **PostgreSQL** or **MySQL** to manage important data such as user accounts, product details, and transactions.  
+
+To keep everything secure, the project will use **TLS/SSL encryption**, **AWS security groups**, and **DNS configuration** for stable and protected access.  
+In the end, **Store Apparel** aims to offer a practical, secure, and customizable online shopping experience built on a reliable cloud foundation.
+
