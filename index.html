@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Store Apparel</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Store Apparel</h1>
+  <p>Modern Fashion Store</p>
+</header>
+
+<nav id="category-nav">
+  <button onclick="filterCategory('all')">All</button>
+  <button onclick="filterCategory('men')">Men</button>
+  <button onclick="filterCategory('women')">Women</button>
+  <button onclick="filterCategory('accessories')">Accessories</button>
+</nav>
+
+<!-- ✅ Products Section -->
+<div id="product-grid">
+  <!-- Example Product -->
+  <div class="product-card" data-category="men">
+    <img src="images/baseball_shirt.jpg" alt="Baseball Shirt">
+    <h3>Baseball Shirt</h3>
+    <p>$24.99</p>
+    <div class="button-row">
+      <button class="add-cart" onclick="addToCart('Baseball Shirt',24.99)">Add to Cart</button>
+      <button class="wishlist-icon" onclick="addToWishlist('Baseball Shirt')">❤️</button>
+    </div>
+  </div>
+
+  <!-- Add more products as in your original HTML -->
+</div>
+
+<!-- ✅ Sidebars -->
+<div class="cart-sidebar">
+  <h3>🛒 Your Cart</h3>
+  <ul id="cart-items"><li>No items yet</li></ul>
+</div>
+
+<div class="wishlist-sidebar">
+  <h3>💖 Wishlist</h3>
+  <ul id="wishlist-items"><li>No items yet</li></ul>
+</div>
+
+<!-- ✅ Checkout Form -->
+<form id="checkout-form">
+  <h2>Checkout</h2>
+  <input name="name" placeholder="Full Name" required>
+  <input name="email" type="email" placeholder="Email" required>
+  <input name="address" placeholder="Shipping Address" required>
+
+  <select name="payment" required>
+    <option value="">Select Payment Method</option>
+    <option value="Credit Card">Credit Card</option>
+    <option value="Debit Card">Debit Card</option>
+    <option value="Digital Wallet">Digital Wallet</option>
+    <option value="Cash on Delivery">Cash on Delivery</option>
+  </select>
+
+  <select name="delivery" required>
+    <option value="">Select Delivery Option</option>
+    <option value="Standard">Standard</option>
+    <option value="Express">Express</option>
+  </select>
+
+  <button type="submit">Place Order</button>
+</form>
+
+<script src="cart.js"></script>
+<script src="checkout.js"></script>
+<script src="email.js"></script>
+
+</body>
+</html>
