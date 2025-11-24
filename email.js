@@ -1,20 +1,10 @@
-emailjs.init("04JUpCpA2diJioW99"); 
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+  <label for="email">Enter your email to confirm checkout:</label>
+  <input type="email" name="email" id="email" required placeholder="viasale.azarcon@gmail.com">
 
-function sendEmail(name, email, orderDetails, address, payment, delivery) {
-  emailjs.send("service_q7pzqrk", "template_jugqs4x", {
-    from_name: name,
-    from_email: email,
-    to_name: "Store Owner",
-    message: `Order Details:\n${orderDetails}\n\nAddress:\n${address}\nPayment: ${payment}\nDelivery: ${delivery}`
-  })
-  .then(() => {
-    alert("Order sent successfully!");
-    cartItems.length = 0;
-    updateCart();
-    document.getElementById('checkout-form').reset();
-  })
-  .catch(err => {
-    alert("Failed to send order.");
-    console.error(err);
-  });
-}
+  <input type="hidden" name="_subject" value="🛍️ Order Received – StoreApparel.online">
+
+  <input type="hidden" name="message" value="Thank you for your order! Your checkout is confirmed.">
+
+  <button type="submit">Confirm Checkout</button>
+</form>
